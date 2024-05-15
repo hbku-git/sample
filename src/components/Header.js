@@ -140,7 +140,7 @@ const Header = () => {
               <div className="header-bottom d-flex align-items-start align-items-xl-center">
                 <div className="header-bottom-start flex-grow-1">
                   <div className="navbar navbar-expand-xl">
-                    <button
+                    {/* <button
                       className="navbar-toggler"
                       type="button"
                       onClick={toggleMenu}
@@ -149,7 +149,7 @@ const Header = () => {
                       aria-label="Toggle navigation"
                     >
                       <span className="navbar-toggler-icon"></span>
-                    </button>
+                    </button> */}
 
                     <div className={`collapse navbar-collapse ${menuExpanded ? 'show' : ''}`} id="headerMenu">
                       {

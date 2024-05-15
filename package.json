@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "20.x"
+    "node": "14.x"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.1",
@@ -40,7 +40,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev:build-server": "NODE_ENV=development webpack --config webpack.server.js --mode=development -w",

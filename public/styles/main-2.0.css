@@ -18419,3 +18419,6 @@ body:has(.navbar .modal.show .search-modal) .modal-backdrop.show {
 .btn-apply:hover .apply-now-img{
   display: inline-block !important;
 }
+.footer-main label{
+  margin-bottom: 0 !important;
+}
