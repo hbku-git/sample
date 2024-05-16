@@ -163,7 +163,7 @@ const Header = () => {
                               }
                               return (
                                 <li className="nav-item" key={k}>
-                                  <a className="nav-link" to={e?.link}>{e?.text}</a>
+                                  <a className="nav-link" href={e?.link}>{e?.text}</a>
                                 </li>
                               )
                             })
