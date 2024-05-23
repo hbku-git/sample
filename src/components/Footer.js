@@ -116,7 +116,7 @@ const Footer = () => {
                             <img src="images/logo-white.svg" alt="logo" />
                         </a>
                     </div>
-                    <div className="col-sm-auto col-lg">
+                    <div className="col-sm-auto col-lg footer-follow">
                         <h5 className="mb-3 text-white font-thin">Follow us</h5>
                         <nav className="share-footer-holder">
                             <a href="https://www.linkedin.com/edu/hamad-bin-khalifa-university-189106" target="_blank" className="share-icons">
