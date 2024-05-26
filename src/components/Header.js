@@ -2,32 +2,17 @@ import React, { useState } from 'react';
 
 const Header = () => {
     const navigationButtom = [
-        { text: 'About HBKU', link: 'https://www.hbku.edu.qa/en/about-hamad-bin-khalifa-university' },
         { text: 'Academics', link: 'https://www.hbku.edu.qa/en/academics' },
         { text: 'Innovation', link: 'https://innovation.hbku.edu.qa/' },
         { text: 'Research', link: 'https://research.hbku.edu.qa/' },
         { text: 'Admissions', link: '/research/facilities-services' },
-        { text: 'University Life', link: 'https://www.hbku.edu.qa/en/life-hbku' },
       ]
 
-    // const [isScrolled, setIsScrolled] = useState(false);
     const [menuExpanded, setMenuExpanded] = useState(false);
 
     const toggleMenu = () => {
         setMenuExpanded(!menuExpanded);
       };
-
-    // const handleScroll = () => {
-    //     const scrollThreshold = 100; 
-    //     setIsScrolled(window.scrollY > scrollThreshold);
-    //   };
-    
-    //   useEffect(() => {
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //       window.removeEventListener('scroll', handleScroll);
-    //     };
-    //   }, []);
 
     return (
         // <header dir="ltr">
@@ -130,8 +115,6 @@ const Header = () => {
                 <nav className="header-top-nav">
                   <ul role="menu" className="nav">
                     <li><a href="https://www.hbku.edu.qa/en/about-hamad-bin-khalifa-university" target="_blank">About Us</a></li>
-                    {/* <li><a href="https://www.hbku.edu.qa/en/academics" target="_blank">Academics</a></li>
-                    <li><a href="https://innovation.hbku.edu.qa/" target="_blank">Innovation</a></li> */}
                     <li><a href="https://www.hbku.edu.qa/en/life-hbku" target="_blank">Life at HBKU</a></li>
                   </ul>
                 </nav>
@@ -140,18 +123,7 @@ const Header = () => {
               <div className="header-bottom d-flex align-items-start align-items-xl-center">
                 <div className="header-bottom-start flex-grow-1">
                   <div className="navbar navbar-expand-xl">
-                    {/* <button
-                      className="navbar-toggler"
-                      type="button"
-                      onClick={toggleMenu}
-                      aria-controls="headerMenu"
-                      aria-expanded={menuExpanded}
-                      aria-label="Toggle navigation"
-                    >
-                      <span className="navbar-toggler-icon"></span>
-                    </button> */}
-
-                    <div className={`collapse navbar-collapse ${menuExpanded ? 'show' : ''}`} id="headerMenu">
+                    <div className={`${menuExpanded ? 'navbar-collapse menu-header justify-content-xl-between collapse show' : 'collapse navbar-collapse '}`} id="headerMenu">
                       {
                         <ul className="navbar-nav">
                           {
@@ -163,7 +135,7 @@ const Header = () => {
                               }
                               return (
                                 <li className="nav-item" key={k}>
-                                  <a className="nav-link" href={e?.link}>{e?.text}</a>
+                                  <a className="nav-link" to={e?.link}>{e?.text}</a>
                                 </li>
                               )
                             })
@@ -176,22 +148,10 @@ const Header = () => {
 
                 <div className="header-bottom-end d-flex align-items-center gap-xxl-4 gap-3 border-start">
                   <a href="https://hbkuqa.elluciancrmrecruit.com/Apply/Account/Login?ReturnUrl=%2fApply" target="_blank" className="btn btn-apply">
-                    {/* Use Lottie or another animation library as needed */}
                     <img src="images/apply-now.gif" width="30" height="30" alt="apply-now" className="apply-now-gif me-2" />
                     <img src="images/ic-applynow.svg" width="30" height="30" className="img-fluid d-none apply-now-img me-2" alt="apply-now"/> 
                     Apply now
                   </a>
-
-                  {/* <div className="header-dropdown">
-                    <a className={`btn btn-user dropdown-toggle1 ${isDropdownOpen ? 'show' : ''}`} href="#" role="button" data-bs-toggle="dropdown" 
-                      onClick={(e) => {e.preventDefault(); setIsDropdownOpen(!isDropdownOpen); }} aria-expanded={isDropdownOpen}>
-                      User
-                    </a>
-                    <ul className={`dropdown-menu ${isDropdownOpen ? 'show user-dropdown-btn' : ''}`}>
-                      <li><a className="dropdown-item" href="#">Student Login</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                    </ul>
-                  </div> */}
 
                   <button
                     className="navbar-toggler"

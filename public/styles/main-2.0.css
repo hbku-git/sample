@@ -16080,6 +16080,9 @@ body:has(.header-inner) {
   .header-bottom-start {
     padding: 0;
   }
+  .navbar-nav .nav-item + .nav-item {
+    margin-left: 0;
+  }
 }
 .header-bottom-start .modal.fade.show {
   background-color: rgba(0, 0, 0, 0.5);
