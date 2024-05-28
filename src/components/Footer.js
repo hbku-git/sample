@@ -117,7 +117,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="col-sm-auto col-lg footer-follow">
-                        <h5 className="mb-3 text-white font-medium">Follow us</h5>
+                        <h5 className="mb-3 text-white font-normal">Follow us</h5>
                         <nav className="share-footer-holder">
                             <a href="https://www.linkedin.com/edu/hamad-bin-khalifa-university-189106" target="_blank" className="share-icons">
                                 <img src="images/ic-linked.svg" alt="linkedin" />
@@ -142,7 +142,7 @@ const Footer = () => {
                         </nav>
                     </div>
                     <div className="col-sm-12 col-lg-5 col-lg-5">
-                        <h5 className="mb-3 text-white font-medium">
+                        <h5 className="mb-3 text-white font-normal">
                             Subscribe to the official HBKU newsletter WAMDHA
                         </h5>
                         <div className="search-modal-field">
@@ -164,7 +164,7 @@ const Footer = () => {
             <div className="container-lg border-bottom gx-0">
                 <div className="row gx-4 pt-4 pt-md-5">
                     <div className="col-auto col-md mb-4">
-                        <h5 className="font-medium mb-3 text-white-color">Colleges</h5>
+                        <h5 className="font-normal mb-3 text-white-color">Colleges</h5>
                         <div className="footer-nav">
                             <ul>
                                 <li>
@@ -189,7 +189,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="col-auto col-md mb-4">
-                        <h5 className="font-medium mb-3 text-white-color">Research Institutes</h5>
+                        <h5 className="font-normal mb-3 text-white-color">Research Institutes</h5>
                         <div className="footer-nav">
                             <ul>
                                 <li>
@@ -207,7 +207,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="col-auto col-md mb-4">
-                        <h5 className="font-medium mb-3 text-white-color">Centers</h5>
+                        <h5 className="font-normal mb-3 text-white-color">Centers</h5>
                         <div className="footer-nav">
                             <ul>
                                 <li>
@@ -226,7 +226,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="col-sm-auto col-md mb-4">
-                        <h5 className="font-medium mb-3 text-white-color">Useful Links</h5>
+                        <h5 className="font-normal mb-3 text-white-color">Useful Links</h5>
                         <div className="footer-nav">
                             <ul>
                                 <li>
