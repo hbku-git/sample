@@ -142,6 +142,12 @@ const Header = () => {
                           }
                         </ul>
                       }
+                      <nav className="navbar-nav-bottom d-block d-xl-none">
+                        <ul role="menu">
+                          <li><a href="https://www.hbku.edu.qa/en/about-hamad-bin-khalifa-university" target="_blank">About Us</a></li>
+                          <li><a href="https://www.hbku.edu.qa/en/life-hbku" target="_blank">Life at HBKU</a></li>
+                        </ul>
+                      </nav>
                     </div>
                   </div>
                 </div>
